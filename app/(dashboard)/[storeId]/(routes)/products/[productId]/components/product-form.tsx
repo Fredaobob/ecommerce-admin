@@ -109,6 +109,7 @@ export const ProductForm: React.FC<ProductFormPorps> = ({
       router.refresh();
       router.push(`/${params.storeId}/products`);
       toast.success("Product deleted.")
+      window.location.reload()
 
     } catch (error) {
       toast.error("Something went wrong");
